@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<title>Build a Survey Form</title>
+</head>
+
+<body>
+    <header class="header">
+<h1 id="title">Survey Form</h1>
+<p id="description">Thank You For Taking Part In Our Survey</p>
+</header>
+<form id="survey-form">
+  <fieldset>
+  <label for="name" id="name-label">Name: <input id="name" type="text" name="name" placeholder=" Enter Full Name" required />
+  </label>
+<label for="email" id="email-label">Email: <input id="email" type="email" name="email" placeholder=" Enter Your Email" required /></label>
+<label for="number" id="number-label">Age: <input id="number" type="number" name="number" min="0" max="110" placeholder=" Age" required /></label>
+</fieldset>
+<fieldset>
+<p>Which area of tech are you most interested in?</p>
+<label for="interests">
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">UI/UX Design</option>
+            <option value="2">Front-end Development</option>
+            <option value="3">Back-end Development</option>
+            <option value="4">Full-Stack Web Development</option>
+            <option value="5">Data Analysis & Data Science</option>
+            <option value="6">Cyber Security</option>
+            <option value="7">Other</option>
+          </select>
+        </label>
+        </fieldset>
+<fieldset>
+  <p>How do you prefer to study?</p>
+  <label for="remote-learning"><input id="remote-learning" type="radio" name="study-preference" value="study-preference" class="inline" /> Remote</label>
+        <label for="on-site-learning"><input id="on-site-learning" type="radio" name="study-preference" value="study-preference" class="inline" /> On Site</label>
+        <label for="hybrid-learning">
+          <input id="hybrid-learning" type="radio" name="study-preference" value="study-preference" class="inline" /> Hybrid
+        </label>
+  </fieldset>
+  <fieldset>
+    <p>What key things do you look for most on a course?<span> (Check all that apply)</span></p>
+    <label for="course-options" name="course-options"><input name="course-options" type="checkbox" value="challenges" class="inline"  /> Challenges</label>
+    <label for="course-options" name="course-options"><input name="course-options" type="checkbox" value="projects" class="inline" /> Projects</label>
+    <label for="course-options" name="course-options"><input name="course-options" type="checkbox" value="community" class="inline" /> Community</label>
+    <label for="course-options" name="course-options"><input name="course-options" type="checkbox" value="open-source" class="inline" /> Open Source</label>
+    <label for="course-options" name="course-options"><input name="course-options" type="checkbox" value="meetups" class="inline" /> Meetups</label>
+    <label for="course-options" name="course-options"><input name="course-options" type="checkbox" value="guest-speakers" class="inline" /> Guest Speakers</label>
+    <label for="course-options" name="course-options"><input name="course-options" type="checkbox" value="socials" class="inline" /> Socials</label>
+    <label for="course-options" name="course-options"><input name="course-options" type="checkbox" value="hackathons" class="inline" /> Hackathons</label>
+    </fieldset>
+    <fieldset>
+      <p>Add any other comments or suggestions here: </p>
+          <textarea id="comments" name="comment" rows="4" cols="30" placeholder="Please enter your comment here..."></textarea>
+  </fieldset>
+      <input type="submit" name="submit" id="submit" />
+      </div>
+</form>
+</div>
+</body>
+</html>
